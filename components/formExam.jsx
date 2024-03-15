@@ -15,14 +15,18 @@ const FormExam = () => {
   };
 
   const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent default form submission behavior
+
     if (fullname === "") {
       setFullname(firstname + " " + surname);
     } else {
       setFullname("");
     }
-
-    console.log("name: ", firstname, surname);
   };
+
+  useEffect(() => {
+    console.log("name: ", firstname, surname);
+  }, [fullname]); // Log the updated values of firstname and surname when fullname changes
 
   return (
     <div>
