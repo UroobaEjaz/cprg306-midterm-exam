@@ -7,7 +7,7 @@ const InteractivityExam = ({ list }) => {
 
   useEffect(() => {
     setWord((prevName) => prevName.toUpperCase());
-  }, []);
+  }, [word]);
 
   const handleNameChange = (event) => {
     setWord(event.target.value);
@@ -17,6 +17,7 @@ const InteractivityExam = ({ list }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
   };
+   console.log(newWord);
 
   return (
     <div>

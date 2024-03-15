@@ -9,7 +9,7 @@ const CodeSample4 = () => {
     { id: "3", name: "Chicken" },
     { id: "3", name: "Cow" },
   ];
-
+  
   return (
     <div className="h-screen bg-white p-2 text-black">
       <h1 className="pb-2 text-blue-600">Code sample 4: Interactivity</h1>
